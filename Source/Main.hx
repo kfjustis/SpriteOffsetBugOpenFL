@@ -20,20 +20,21 @@ class Main extends Sprite
 		container = new Sprite();
 		addChild(container);
 
+		// Window bg rect.
 		graphics.beginFill(0x000000);
         graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
         graphics.endFill();
 
-		// Create bg.
+		// Create stage bg.
 		var background:Sprite = new Sprite();
-		background.graphics.beginFill(0xFF0000);
+		background.graphics.beginFill(0xFFE40066);
 		background.graphics.drawRect(0, 0, 800, 600);
 		background.graphics.endFill();
 		container.addChild(background);
 
 		// Create square.
 		var square:Sprite = new Sprite();
-		square.graphics.beginFill(0x00FF00);
+		square.graphics.beginFill(0xFF345995);
 		square.graphics.drawRect(0, 0, 200, 200);
 		square.graphics.endFill();
 		square.x = stage.stageWidth - square.width;
@@ -60,6 +61,7 @@ class Main extends Sprite
         container.x = (stage.stageWidth - container.width) / 2;
         container.y = (stage.stageHeight - container.height) / 2;
 
+		// Update window bg rect.
 		graphics.beginFill(0x000000);
         graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
         graphics.endFill();
