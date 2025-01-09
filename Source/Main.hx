@@ -22,8 +22,8 @@ class Main extends Sprite
 
 		// Window bg rect.
 		graphics.beginFill(0x000000);
-        graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
-        graphics.endFill();
+		graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
+		graphics.endFill();
 
 		// Create stage bg.
 		var background:Sprite = new Sprite();
@@ -58,12 +58,12 @@ class Main extends Sprite
 		container.scaleY = scale;
 		
 		// Center the virtual stage
-        container.x = (stage.stageWidth - container.width) / 2;
-        container.y = (stage.stageHeight - container.height) / 2;
+		container.x = (stage.stageWidth - container.width) / 2;
+		container.y = (stage.stageHeight - container.height) / 2;
 
 		// Update window bg rect.
 		graphics.beginFill(0x000000);
-        graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
-        graphics.endFill();
+		graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
+		graphics.endFill();
 	}
 }
